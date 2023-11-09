@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menú de comidas saludables</title>
+    <style>
+        .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+
+        .rating>span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+        }
+
+        .rating>span:hover:before,
+        .rating>span:hover~span:before {
+            content: '\2605';
+            position: absolute;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menú de comidas saludables</h1>
+    <ul>
+        <li>
+            <h3>Ensalada de pollo</h3>
+            <p>Ensalada fresca con trozos de pollo a la parrilla, aderezada con vinagreta de limón.</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+        </li>
+
+        <li>
+            <h3>Ensalada de quinoa</h3>
+            <p>Ensalada de quinoa con espinacas frescas, tomate y aderezo de balsámico.</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+        </li>
+
+        <li>
+            <h3>Wrap de aguacate</h3>
+            <p>Wrap de aguacate, tomate y espinacas con aderezo de mostaza y miel.</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+        </li>
+
+        <!-- Añade más platos con sus descripciones y sistemas de puntuación aquí -->
+
+    </ul>
+    <br>
+    <a href="/" class="button">Volver al menú principal</a>
+</body>
+
+</html>
